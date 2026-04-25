@@ -1,0 +1,37 @@
+body {
+
+    font-family: Verdana;
+
+}
+
+h1 {
+    color: white;
+}
+
+
+.home_button {
+
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    font-size: xxx-large;
+    background-color: #0b5ed7;
+    color: white;
+
+}
+
+
+
+.category_button {
+
+
+    background-color: #0b5ed7;
+    color: white;
+    font-size: xxx-large;
+    padding: 50px;
+
+
+
+}
