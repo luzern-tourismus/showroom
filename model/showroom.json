@@ -1,0 +1,89 @@
+{
+    "app": "ShowRoom",
+    "name": "showroom",
+    "namespace": "LuzernTourismus\\ShowRoom",
+    "is_deleted": false,
+    "model": [
+        {
+            "template": "default",
+            "model_id": "a3d6c325-bef9-48f6-aaef-0f7ecce2b80e",
+            "label": "Category",
+            "class_name": "Category",
+            "table_name": "showroom_category",
+            "namespace": "LuzernTourismus\\ShowRoom\\Data\\Category",
+            "row_class_name": "",
+            "primary_index": "auto_increment",
+            "is_deleted": false,
+            "type": [
+                {
+                    "type": "translation_text",
+                    "label": "Category",
+                    "field_name": "category",
+                    "variable_name": "category",
+                    "allow_null": false,
+                    "is_deleted": false,
+                    "length": 255
+                }
+            ],
+            "index": []
+        },
+        {
+            "template": "default",
+            "model_id": "a1f615eb-ccf3-4d72-8ef9-a86b6d7b1cdb",
+            "label": "Poi",
+            "class_name": "Poi",
+            "table_name": "showroom_poi",
+            "namespace": "LuzernTourismus\\ShowRoom\\Data\\Poi",
+            "row_class_name": "",
+            "primary_index": "auto_increment",
+            "is_deleted": false,
+            "type": [
+                {
+                    "type": "external",
+                    "label": "Category",
+                    "field_name": "category",
+                    "variable_name": "category",
+                    "allow_null": false,
+                    "is_deleted": false,
+                    "external_model_id": "a3d6c325-bef9-48f6-aaef-0f7ecce2b80e"
+                },
+                {
+                    "type": "text",
+                    "label": "Poi",
+                    "field_name": "poi",
+                    "variable_name": "poi",
+                    "allow_null": false,
+                    "is_deleted": true,
+                    "length": "255"
+                },
+                {
+                    "type": "translation_large_text",
+                    "label": "Text",
+                    "field_name": "text",
+                    "variable_name": "text",
+                    "allow_null": true,
+                    "is_deleted": false
+                },
+                {
+                    "type": "translation_text",
+                    "label": "Poi",
+                    "field_name": "poi",
+                    "variable_name": "poi",
+                    "allow_null": false,
+                    "is_deleted": false,
+                    "length": 255
+                },
+                {
+                    "type": "image",
+                    "label": "Image",
+                    "field_name": "image",
+                    "variable_name": "image",
+                    "allow_null": false,
+                    "is_deleted": false,
+                    "format": []
+                }
+            ],
+            "index": []
+        }
+    ]
+}
